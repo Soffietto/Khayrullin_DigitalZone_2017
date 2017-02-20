@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="simpleVillager"
+          class="ru.kpfu.itis.spring.interfaces.impl.warrior.SimpleVillager">
+        <constructor-arg ref="diamondArmor"/>
+        <constructor-arg ref="diamondSword"/>
+    </bean>
+
+    <bean id="diamondArmor" class="ru.kpfu.itis.spring.interfaces.impl.armor.DiamondArmor"/>
+    <bean id="diamondSword" class="ru.kpfu.itis.spring.interfaces.impl.weapon.DiamondSword"/>
+
+    <bean id="woodenSword" class="ru.kpfu.itis.spring.interfaces.impl.weapon.WoodenSword"/>
+    <bean id="leahterArmor" class="ru.kpfu.itis.spring.interfaces.impl.armor.LeatherArmor"/>
+
+</beans>
